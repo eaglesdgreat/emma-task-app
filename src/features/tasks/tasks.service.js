@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = '/api/tasks/';
+const API_URL = `${process.env.REACT_APP_BACKEND_URL}/api/tasks/`;
 
 const createTask = async (taskData, token) => {
   const config = {
